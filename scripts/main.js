@@ -20,27 +20,32 @@ function initializeWebsite() {
 // Navigation functionality
 function initializeNavigation() {
     const navLinks = document.querySelectorAll('.nav-link');
-    let currentPath = window.location.pathname;
+    const normalizePath = (path) => {
+        if (!path) return '/';
+        let normalized = path.trim();
+        
+        if (!normalized.startsWith('/')) {
+            normalized = '/' + normalized;
+        }
+        
+        if (normalized === '/' || normalized === '/index' || normalized === '/index.html') {
+            return '/';
+        }
+        
+        if (normalized.endsWith('.html')) {
+            normalized = normalized.slice(0, -5);
+        }
+        
+        return normalized;
+    };
     
-    // Normalize path for comparison
-    if (currentPath === '/' || currentPath === '/index.html' || currentPath === '/index') {
-        currentPath = '/';
-    } else if (currentPath.endsWith('.html')) {
-        currentPath = currentPath.replace('.html', '');
-    }
-    
-    // Ensure path starts with /
-    if (!currentPath.startsWith('/')) {
-        currentPath = '/' + currentPath;
-    }
+    const currentPath = normalizePath(window.location.pathname);
     
     navLinks.forEach(link => {
         link.classList.remove('active');
-        const linkHref = link.getAttribute('href');
+        const linkHref = normalizePath(link.getAttribute('href'));
         
-        if (linkHref === currentPath || 
-            (currentPath === '/' && linkHref === '/') ||
-            (currentPath !== '/' && linkHref === currentPath)) {
+        if (linkHref === currentPath) {
             link.classList.add('active');
         }
     });
