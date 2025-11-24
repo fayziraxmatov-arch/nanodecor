@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bog'lanish - NanoDecor</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>NanoDecor</h2>
+                </div>
+                
+                <!-- Language Selector -->
+                <div class="language-selector">
+                    <button class="lang-btn active" data-lang="uz">
+                        <i class="fas fa-flag"></i> UZ
+                    </button>
+                    <button class="lang-btn" data-lang="ru">
+                        <i class="fas fa-flag"></i> РУ
+                    </button>
+                    <button class="lang-btn" data-lang="zh">
+                        <i class="fas fa-flag"></i> 中文
+                    </button>
+                </div>
+
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link" data-key="home">Bosh sahifa</a></li>
+                    <li><a href="products.html" class="nav-link" data-key="products">Mahsulotlar</a></li>
+                    <li><a href="projects.html" class="nav-link" data-key="projects">Loyihalar</a></li>
+                    <li><a href="contact.html" class="nav-link active" data-key="contact">Bog'lanish</a></li>
+                </ul>
+
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 data-key="contact-title">Biz bilan bog'laning</h1>
+            <p data-key="contact-subtitle">Savollaringiz bormi? Biz sizga yordam berishga tayyormiz!</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2 data-key="send-message">Xabar yuborish</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" data-key="name">Ismingiz</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone" data-key="phone">Telefon raqam</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" data-key="email">Email manzil</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service" data-key="service">Xizmat turi</label>
+                            <select id="service" name="service" required>
+                                <option value="" data-key="select-service">Xizmat turini tanlang</option>
+                                <option value="marble" data-key="marble">Marmar ishlov berish</option>
+                                <option value="panels" data-key="panels">Dekorativ panellar</option>
+                                <option value="mosaics" data-key="mosaics">Mozaikalar</option>
+                                <option value="limestone" data-key="limestone">Ohaktosh</option>
+                                <option value="consultation" data-key="consultation-option">Maslahat</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" data-key="message">Xabar</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary" data-key="send-message-btn">Xabar yuborish</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2 data-key="contact-info">Aloqa ma'lumotlari</h2>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 data-key="phone-number">Telefon</h4>
+                            <p>+998 90 712 00 99</p>
+                            <a href="tel:+998907120099" class="contact-link" data-key="call-now">Hozir qo'ng'iroq qiling</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-telegram"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Telegram</h4>
+                            <p>@nano_decor</p>
+                            <a href="https://t.me/nano_decor" class="contact-link" data-key="send-telegram">Telegramda yozish</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Instagram</h4>
+                            <p>@nano_decor</p>
+                            <a href="https://www.instagram.com/nano_decor?igsh=eXBwMWh4aXQxNzZw" class="contact-link" data-key="follow-instagram">Instagramda kuzatish</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 data-key="location">Joylashuv</h4>
+                            <p>Buxoro shahar</p>
+                            <a href="https://maps.google.com/maps?q=39.506961,64.812346&ll=39.506961,64.812346&z=16" class="contact-link" data-key="view-map">Xaritada ko'rish</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 data-key="working-hours">Ish vaqti</h4>
+                            <p>Dushanba - Yakshanba: 8:00 - 18:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map Section -->
+            <div class="map-section">
+                <h2 data-key="our-location">Bizning joylashuvimiz</h2>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.8234567890123!2d64.435262!3d39.788734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMznCsDQ3JzE5LjQiTiA2NMKwMjYnMDYuOSJF!5e0!3m2!1sen!2s!4v1234567890123!5m2!1sen!2s"
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="map-buttons">
+                    <a href="https://maps.google.com/maps?q=39.506961,64.812346&ll=39.506961,64.812346&z=16" class="btn-primary" data-key="get-directions">Yo'nalish olish</a>
+                </div>
+            </div>
+
+            <!-- Registration CTA -->
+            <div class="registration-cta">
+                <div class="cta-content">
+                    <h2 data-key="register-now">Hoziroq ro'yxatdan o'ting!</h2>
+                    <p data-key="register-description">Bizning xizmatlarimizdan foydalanish va maxsus takliflardan xabardor bo'lish uchun ro'yxatdan o'ting.</p>
+                    <div class="cta-buttons">
+                        <button class="btn-primary register-btn" data-key="register-telegram">Telegramda ro'yxatdan o'tish</button>
+                        <button class="btn-secondary register-btn" data-key="register-instagram">Instagramda kuzatish</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>NanoDecor</h3>
+                    <p data-key="footer-desc">Professional tosh ishlov berish va dekorativ materiallar ishlab chiqarish kompaniyasi.</p>
+                    <div class="social-links">
+                        <a href="https://t.me/nano_decor" class="social-link">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://www.instagram.com/nano_decor?igsh=eXBwMWh4aXQxNzZw" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-key="quick-links">Tezkor havolalar</h4>
+                    <ul>
+                        <li><a href="index.html" data-key="home">Bosh sahifa</a></li>
+                        <li><a href="products.html" data-key="products">Mahsulotlar</a></li>
+                        <li><a href="projects.html" data-key="projects">Loyihalar</a></li>
+                        <li><a href="contact.html" data-key="contact">Bog'lanish</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-key="contact-info">Aloqa ma'lumotlari</h4>
+                    <p><i class="fas fa-phone"></i> +998 90 712 00 99</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Buxoro shahar</p>
+                    <p><i class="fas fa-envelope"></i> info@nanodecor.uz</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 NanoDecor. <span data-key="rights-reserved">Barcha huquqlar himoyalangan.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/translations.js"></script>
+</body>
+</html>
