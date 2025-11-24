@@ -20,11 +20,27 @@ function initializeWebsite() {
 // Navigation functionality
 function initializeNavigation() {
     const navLinks = document.querySelectorAll('.nav-link');
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    let currentPath = window.location.pathname;
+    
+    // Normalize path for comparison
+    if (currentPath === '/' || currentPath === '/index.html' || currentPath === '/index') {
+        currentPath = '/';
+    } else if (currentPath.endsWith('.html')) {
+        currentPath = currentPath.replace('.html', '');
+    }
+    
+    // Ensure path starts with /
+    if (!currentPath.startsWith('/')) {
+        currentPath = '/' + currentPath;
+    }
     
     navLinks.forEach(link => {
         link.classList.remove('active');
-        if (link.getAttribute('href') === currentPage) {
+        const linkHref = link.getAttribute('href');
+        
+        if (linkHref === currentPath || 
+            (currentPath === '/' && linkHref === '/') ||
+            (currentPath !== '/' && linkHref === currentPath)) {
             link.classList.add('active');
         }
     });
