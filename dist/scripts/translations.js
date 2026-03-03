@@ -57,6 +57,8 @@ window.translations = {
         'start-project': 'O\'z loyihangizni boshlashni xohlaysizmi?',
         'consultation': 'Bepul maslahat va professional xizmat uchun bizga murojaat qiling!',
         'get-consultation': 'Maslahat olish',
+        'projects-titlee': 'Bizning Sertifikatlarimiz',
+        'projects-subtitlee':'Muvaffaqiyatli amalga oshirilgan sertifikatlar va mijozlar bilan ishlash natijalari orqali olingan sertifikatlar',
         
         // Contact page
         'contact-title': 'Biz bilan bog\'laning',
@@ -152,6 +154,8 @@ window.translations = {
         'start-project': 'Хотите начать свой проект?',
         'consultation': 'Обращайтесь к нам за бесплатной консультацией и профессиональным сервисом!',
         'get-consultation': 'Получить консультацию',
+        'projects-titlee': 'Наши сертификаты',
+        'projects-subtitlee':'Сертификаты, полученные в результате успешной реализации программ сертификации и показателей обслуживания клиентов',
         
         // Contact page
         'contact-title': 'Свяжитесь с нами',
@@ -246,6 +250,7 @@ window.translations = {
         'start-project': '想要开始您的项目吗？',
         'consultation': '联系我们获取免费咨询和专业服务！',
         'get-consultation': '获取咨询',
+        'projects-titlee':''
         
         // Contact page
         'contact-title': '联系我们',
