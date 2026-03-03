@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="uz">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="/styles/responsive.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
+
 <body>
 
     <header class="header">
@@ -16,8 +18,8 @@
                 <div class="nav-logo">
                     <h2>NanoDecor</h2>
                 </div>
-                
-                
+
+
                 <div class="language-selector">
                     <button class="lang-btn active" data-lang="uz">
                         <i class="fas fa-flag"></i> UZ
@@ -25,18 +27,21 @@
                     <button class="lang-btn" data-lang="ru">
                         <i class="fas fa-flag"></i> РУ
                     </button>
+                    <button class="lang-btn" data-lang="en">
+                        <i class="fas fa-flag"></i> EN
+                    </button>
                     <button class="lang-btn" data-lang="zh">
                         <i class="fas fa-flag"></i> 中文
                     </button>
                 </div>
 
-                    <ul class="nav-menu">
-                        <li><a href="/" class="nav-link active" data-key="home">Bosh sahifa</a></li>
-                        <li><a href="/products.html" class="nav-link" data-key="products">Mahsulotlar</a></li>
-                        <li><a href="/projects.html" class="nav-link" data-key="projects">Loyihalar</a></li>
-                        <li><a href="/contact.html" class="nav-link" data-key="contact">Bog'lanish</a></li>
-                    </ul>    
-                    <div class="hamburger">
+                <ul class="nav-menu">
+                    <li><a href="/" class="nav-link active" data-key="home">Bosh sahifa</a></li>
+                    <li><a href="/products.html" class="nav-link" data-key="products">Mahsulotlar</a></li>
+                    <li><a href="/projects.html" class="nav-link" data-key="projects">Loyihalar</a></li>
+                    <li><a href="/contact.html" class="nav-link" data-key="contact">Bog'lanish</a></li>
+                </ul>
+                <div class="hamburger">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -45,36 +50,39 @@
         </nav>
     </header>
 
-    
+
     <section class="hero">
         <div class="hero-content">
-            <h1 class="hero-title" data-key="hero-title">NanoDecor - Professional Tosh Ishlov Berish</h1>
-            <p class="hero-subtitle" data-key="hero-subtitle">Eng yaxshi sifat va professional xizmat bilan sizning orzularingizni amalga oshiramiz</p>
+            <video controls width="600" src="nanodecor_picture/nanovideo.mp4"></video>
+            <p class="hero-subtitle" data-key="hero-subtitle">Eng yaxshi sifat va professional xizmat bilan sizning
+                orzularingizni amalga oshiramiz</p>
             <div class="hero-buttons">
                 <button class="btn-primary register-btn" data-key="register">Ro'yxatdan o'tish</button>
                 <button class="btn-secondary" onclick="scrollToSection('about')" data-key="learn-more">Batafsil</button>
             </div>
         </div>
         <div class="hero-image">
-            <img src="/nanodecor_picture/sahifaa7 (1).jpg" alt="NanoDecor Works">
+            <img src="/nanodecor_picture/nanoicon3.jpg" alt="NanoDecor Works">
         </div>
     </section>
 
-  
+
     <section id="about" class="about">
         <div class="container">
             <div class="about-header">
                 <h2 data-key="about-title">NanoDecor Haqida</h2>
-                <p data-key="about-description">Biz professional tosh ishlov berish sohasida faoliyat yuritamiz va eng yuqori sifatli mahsulotlarni taqdim etamiz.</p>
+                <p data-key="about-description">Biz professional tosh ishlov berish sohasida faoliyat yuritamiz va eng
+                    yuqori sifatli mahsulotlarni taqdim etamiz.</p>
             </div>
-            
+
             <div class="about-grid">
                 <div class="about-card">
                     <div class="card-image">
                         <img src="/nanodecor_picture/sahifa9 (1).jpg" alt="Stone Processing">
                     </div>
                     <h3 data-key="stone-processing">Tosh Ishlov Berish</h3>
-                    <p data-key="stone-desc">Eng zamonaviy uskunalar yordamida har qanday toshlarni professional darajada ishlov beramiz.</p>
+                    <p data-key="stone-desc">Eng zamonaviy uskunalar yordamida har qanday toshlarni professional
+                        darajada ishlov beramiz.</p>
                 </div>
 
                 <div class="about-card">
@@ -82,7 +90,8 @@
                         <img src="/nanodecor_picture/sahifaa4.jpg" alt="Panels">
                     </div>
                     <h3 data-key="panels">Pano va Dekor</h3>
-                    <p data-key="panels-desc">Chiroyli va zamonaviy pano hamda dekorativ elementlar tayyorlash bo'yicha mutaxassismiz.</p>
+                    <p data-key="panels-desc">Chiroyli va zamonaviy pano hamda dekorativ elementlar tayyorlash bo'yicha
+                        mutaxassismiz.</p>
                 </div>
 
                 <div class="about-card">
@@ -90,7 +99,8 @@
                         <img src="/nanodecor_picture/sahifaa3 (1).png" alt="Mosaics">
                     </div>
                     <h3 data-key="mosaics">Mozaikalar</h3>
-                    <p data-key="mosaics-desc">Noyob va chiroyli mozaika ishlarini amalga oshiramiz. Har bir detal e'tibor bilan ishlanadi.</p>
+                    <p data-key="mosaics-desc">Noyob va chiroyli mozaika ishlarini amalga oshiramiz. Har bir detal
+                        e'tibor bilan ishlanadi.</p>
                 </div>
 
                 <div class="about-card">
@@ -109,7 +119,7 @@
                 </div>
                 <div class="stat-item">
                     <h3>25+</h3>
-                    <p data-key="team-members">Jamoa a'zolari</p>       
+                    <p data-key="team-members">Jamoa a'zolari</p>
                 </div>
                 <div class="stat-item">
                     <h3>500+</h3>
@@ -119,11 +129,11 @@
                     <h3>100%</h3>
                     <p data-key="satisfaction">Mijoz mamnuniyati</p>
                 </div>
-            </div>  
+            </div>
         </div>
     </section>
 
-   
+
     <section class="founder">
         <div class="container">
             <div class="founder-content">
@@ -133,7 +143,11 @@
                 <div class="founder-info">
                     <h2 data-key="founder-title">Kompaniya Asoschisi</h2>
                     <h3>Boltaboyev Ravshan Rakhmatovich</h3>
-                    <p data-key="founder-desc">15 yildan ortiq tajribaga ega professional mutaxassis. NanoDecor kompaniyasini 2014-yilda asos solgan. Tosh ishlov berish sohasida chuqur bilim va tajribaga ega. Har bir loyihaga shaxsiy e'tibor qaratadi va mijozlar bilan bevosita aloqa o'rnatadi. Uning rahbarligi ostida kompaniya mintaqadagi eng ishonchli va professional tashkilotlardan biriga aylangan.</p>
+                    <p data-key="founder-desc">15 yildan ortiq tajribaga ega professional mutaxassis. NanoDecor
+                        kompaniyasini 2014-yilda asos solgan. Tosh ishlov berish sohasida chuqur bilim va tajribaga ega.
+                        Har bir loyihaga shaxsiy e'tibor qaratadi va mijozlar bilan bevosita aloqa o'rnatadi. Uning
+                        rahbarligi ostida kompaniya mintaqadagi eng ishonchli va professional tashkilotlardan biriga
+                        aylangan.</p>
                     <div class="founder-contact">
                         <button class="btn-primary register-btn" data-key="contact-founder">Bog'lanish</button>
                     </div>
@@ -142,13 +156,14 @@
         </div>
     </section>
 
-   
+
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>NanoDecor</h3>
-                    <p data-key="footer-desc">Professional tosh ishlov berish va dekorativ materiallar ishlab chiqarish kompaniyasi.</p>
+                    <p data-key="footer-desc">Professional tosh ishlov berish va dekorativ materiallar ishlab chiqarish
+                        kompaniyasi.</p>
                     <div class="social-links">
                         <a href="https://t.me/nano_decor" class="social-link">
                             <i class="fab fa-telegram"></i>
@@ -158,23 +173,24 @@
                         </a>
                     </div>
                 </div>
-                
-                    <div class="footer-section">
-                        <h4 data-key="quick-links">Tezkor havolalar</h4>
-                        <ul>
-                            <li><a href="/" data-key="home">Bosh sahifa</a></li>
-                            <li><a href="/products.html" data-key="products">Mahsulotlar</a></li>
-                            <li><a href="/projects.html" data-key="projects">Loyihalar</a></li>
-                            <li><a href="/contact.html" data-key="contact">Bog'lanish</a></li>
-                        </ul>
-                    </div>                <div class="footer-section">
+
+                <div class="footer-section">
+                    <h4 data-key="quick-links">Tezkor havolalar</h4>
+                    <ul>
+                        <li><a href="/" data-key="home">Bosh sahifa</a></li>
+                        <li><a href="/products.html" data-key="products">Mahsulotlar</a></li>
+                        <li><a href="/projects.html" data-key="projects">Loyihalar</a></li>
+                        <li><a href="/contact.html" data-key="contact">Bog'lanish</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
                     <h4 data-key="contact-info">Aloqa ma'lumotlari</h4>
                     <p><i class="fas fa-phone"></i> +998 90 712 00 99</p>
                     <p><i class="fas fa-map-marker-alt"></i> Buxoro shahar</p>
-                    <p><i class="fas fa-envelope"></i> info@nanodecor.uz</p>
+                    <p><i class="fas fa-envelope"></i>nanodecor99@gmail.com</p>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
                 <p>&copy; 2025 NanoDecor. <span data-key="rights-reserved">Barcha huquqlar himoyalangan.</span></p>
             </div>
@@ -184,4 +200,5 @@
     <script src="/scripts/main.js"></script>
     <script src="/scripts/translations.js"></script>
 </body>
+
 </html>

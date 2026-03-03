@@ -27,10 +27,19 @@ body {
     background-color: var(--white);
 }
 
+
 .container {
     max-width: var(--max-width);
     margin: 0 auto;
     padding: 0 20px;
+}
+
+
+.hero-logo img {
+    max-width: 100%;
+    width: 900px;   /* logo kattaligi */
+    height: auto;
+    margin-bottom: 30px;
 }
 
 
@@ -44,6 +53,7 @@ body {
     z-index: 1000;
     transition: var(--transition);
 }
+
 
 .navbar {
     padding: 1rem 0;
@@ -145,7 +155,7 @@ body {
     align-items: center;
     min-height: 100vh;
     padding: 120px 0 80px;
-    background: linear-gradient(135deg, var(--accent-color) 0%, var(--white) 100%);
+    background: #F7F8F0;
 }
 
 .hero-content {
@@ -170,8 +180,10 @@ body {
 
 .hero-buttons {
     display: flex;
-    gap: 1.5rem;
+    gap: 20px;
+    justify-content: center;   /* O‘rtaga olib keladi */
     align-items: center;
+    margin-top: 20px;
 }
 
 .hero-image {
